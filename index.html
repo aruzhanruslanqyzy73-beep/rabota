@@ -6,28 +6,47 @@
     <title>BTS билеттерін сату</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Қарапайым стильдер тек оқуға ыңғайлы болу үшін */
-        body { font-family: Arial, sans-serif; line-height: 1.5; padding: 0 20px; }
-        header, footer { text-align: center; margin: 20px 0; }
-        h2 { margin-top: 30px; }
-        section { margin-bottom: 30px; }
+        body { font-family: Arial, sans-serif; margin:0; padding:0; line-height: 1.6; }
+        header, footer { text-align: center; padding: 10px; background: #f5f5f5; }
+        h1, h2 { text-align: center; }
+        nav { text-align: center; margin: 10px 0; }
+        nav a { margin: 0 10px; text-decoration: none; color: #333; }
+        section { padding: 20px; border-bottom: 1px solid #ccc; }
+        .slider { position: relative; max-width: 800px; margin: 0 auto; }
+        .slides img { width: 100%; display: none; }
+        .active-slide { display: block; }
+        .faq-item { margin-bottom: 10px; }
+        .faq-question { cursor: pointer; color: #007bff; }
+        .faq-answer { display: none; margin-top: 5px; padding-left: 15px; }
         button { padding: 5px 10px; cursor: pointer; margin-top: 5px; }
         .team-list { display: none; margin-top: 10px; }
+        ul { padding-left: 20px; }
     </style>
 </head>
 <body>
     <header>
-        <h1>BTS билеттерін сату</h1>
+        <h1>BTS БИЛЕТТЕРІН САТУ</h1>
         <nav>
             <a href="#concert-info">Концерт</a> |
             <a href="#tickets">Билеттер</a> |
             <a href="#services">Қызметтер</a> |
             <a href="#bts-info">BTS туралы</a> |
             <a href="#gallery">Галерея</a> |
-            <a href="#faq">FAQ</a> |
+            <a href="#faq">Жиі қойылатын сұрақтар</a> |
             <a href="#team">Жасаушылар</a>
         </nav>
     </header>
+
+    <!-- Басты бет: суреттер слайдері -->
+    <section id="home">
+        <div class="slider">
+            <div class="slides">
+                <img src="images/bts1.jpg" class="active-slide" alt="BTS концерт суреті 1">
+                <img src="images/bts2.jpg" alt="BTS концерт суреті 2">
+                <img src="images/bts3.jpg" alt="BTS концерт суреті 3">
+            </div>
+        </div>
+    </section>
 
     <main>
         <!-- 1. Концерт туралы толық ақпарат -->
@@ -45,9 +64,9 @@
         <section id="tickets">
             <h2>Билеттерді таңдаңыз</h2>
             <ul>
-                <li>VIP Билет – 100 000 ₸ (мерчпен бірге)</li>
+                <li>VIP Билет – 100 000 ₸ (мерчпен бірге, арнайы орын)</li>
                 <li>Стандарт Билет – 50 000 ₸</li>
-                <li>Fan Club Билет – 150 000 ₸ (мерч + арнайы орындар)</li>
+                <li>Fan Club Билет – 150 000 ₸ (мерч + фан клуб мүшелеріне арнайы орындар)</li>
                 <li>Балаларға арналған жеңілдік билеттер – 25 000 ₸</li>
             </ul>
         </section>
@@ -62,13 +81,14 @@
             </ul>
         </section>
 
-        <!-- 4. BTS туралы бөлім -->
+        <!-- 4. BTS туралы толық ақпарат -->
         <section id="bts-info">
             <h2>BTS туралы</h2>
             <ul>
                 <li>Топ мүшелері: RM, Jin, Suga, J-Hope, Jimin, V, Jungkook</li>
                 <li>Соңғы альбомдары: "BE", "Proof"</li>
-                <li>Концертте арнайы шоу мен фан-ірекеттер болады</li>
+                <li>Хит әндері: "Dynamite", "Butter", "Life Goes On", "Permission to Dance"</li>
+                <li>Концертте арнайы шоу және фан-ірекеттер болады: фанмейд баннерлер, жарық шоу, интерактивті сессиялар</li>
             </ul>
         </section>
 
@@ -76,7 +96,7 @@
         <section id="gallery">
             <h2>Фото/видео галерея</h2>
             <ul>
-                <li>BTS концерт суреттері</li>
+                <li>BTS концерттерінен суреттер</li>
                 <li>Музыкалық клиптер және фан-камера видеолары</li>
             </ul>
         </section>
@@ -90,7 +110,7 @@
             </ul>
         </section>
 
-        <!-- 7. Сатып алу процесі -->
+        <!-- 7. Сатып алу процесін жеңілдету -->
         <section id="purchase">
             <h2>Сатып алу процесін жеңілдету</h2>
             <ul>
@@ -104,19 +124,27 @@
         <section id="discounts">
             <h2>Акциялар мен жеңілдіктер</h2>
             <ul>
-                <li>Ерте сатып алушыларға жеңілдіктер</li>
-                <li>Fan Club мүшелеріне арнайы ұсыныстар</li>
+                <li>Ерте сатып алушыларға 10% жеңілдік</li>
+                <li>Fan Club мүшелеріне арнайы орын және мерч сыйлықтары</li>
+                <li>Мерекелік акциялар: концерт күні кейбір билеттерге арнайы бонус</li>
             </ul>
         </section>
 
-        <!-- 9. Жиі қойылатын сұрақтар -->
+        <!-- 9. Жиі қойылатын сұрақтар (FAQ) -->
         <section id="faq">
-            <h2>Жиі қойылатын сұрақтар (FAQ)</h2>
-            <ul>
-                <li>Билет қай уақытта сатылымға шығады?</li>
-                <li>Қайтару немесе айырбастау саясаты қандай?</li>
-                <li>Концертке балаларды әкелуге бола ма?</li>
-            </ul>
+            <h2>Жиі қойылатын сұрақтар</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Билет қай уақытта сатылымға шығады?</div>
+                <div class="faq-answer">Билеттер 2025 жылдың 1 қазанынан бастап сатылады.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Қайтару немесе айырбастау саясаты қандай?</div>
+                <div class="faq-answer">Сатып алынған билеттер қайтарылмайды, тек қате төлем болса немесе концерт жойылса билеттерді айырбастауға болады.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">Концертке балаларды әкелуге бола ма?</div>
+                <div class="faq-answer">Иә, балалар 6 жасқа дейін ата-аналарымен тегін кіре алады, ал 6 жастан жоғары балалар үшін билет қажет.</div>
+            </div>
         </section>
 
         <!-- 10. Бұл сайтты жасаған адамдар -->
@@ -138,6 +166,25 @@
     </footer>
 
     <script>
+        // Бастағы суреттер слайдері
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slides img');
+        function showSlides() {
+            slides.forEach(img => img.classList.remove('active-slide'));
+            slideIndex++;
+            if(slideIndex > slides.length) { slideIndex = 1; }
+            slides[slideIndex-1].classList.add('active-slide');
+            setTimeout(showSlides, 3000);
+        }
+        showSlides();
+
+        // FAQ жауаптарды көрсету/жасыру
+        function toggleAnswer(element) {
+            const answer = element.nextElementSibling;
+            answer.style.display = (answer.style.display === 'block') ? 'none' : 'block';
+        }
+
+        // Жасаушылар тізімін көрсету/жасыру
         function toggleTeam() {
             const list = document.getElementById('team-list');
             list.style.display = (list.style.display === 'none' || list.style.display === '') ? 'block' : 'none';
@@ -145,4 +192,5 @@
     </script>
 </body>
 </html>
+
 
