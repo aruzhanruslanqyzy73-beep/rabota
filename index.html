@@ -5,30 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BTS билеттерін сату</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Қарапайым стильдер тек оқуға ыңғайлы болу үшін */
+        body { font-family: Arial, sans-serif; line-height: 1.5; padding: 0 20px; }
+        header, footer { text-align: center; margin: 20px 0; }
+        h2 { margin-top: 30px; }
+        section { margin-bottom: 30px; }
+        button { padding: 5px 10px; cursor: pointer; margin-top: 5px; }
+        .team-list { display: none; margin-top: 10px; }
+    </style>
 </head>
 <body>
     <header>
-        <img src="images/bts.jpg" alt="BTS Logo" class="logo">
         <h1>BTS билеттерін сату</h1>
         <nav>
-            <a href="#">Басты</a>
-            <a href="#">Билеттер</a>
-            <a href="#">Байланыс</a>
+            <a href="#concert-info">Концерт</a> |
+            <a href="#tickets">Билеттер</a> |
+            <a href="#services">Қызметтер</a> |
+            <a href="#bts-info">BTS туралы</a> |
+            <a href="#gallery">Галерея</a> |
+            <a href="#faq">FAQ</a> |
+            <a href="#team">Жасаушылар</a>
         </nav>
     </header>
 
     <main>
+        <!-- 1. Концерт туралы толық ақпарат -->
+        <section id="concert-info">
+            <h2>Концерт туралы толық ақпарат</h2>
+            <ul>
+                <li>Күні мен уақыты: 2025 жылғы 15 қараша, 19:00</li>
+                <li>Орналасқан орын: Астана, "Astana Arena" стадионы</li>
+                <li>Кіріс есіктері ашылу уақыты: 18:00</li>
+                <li>Концерт ұзақтығы: 2 сағат 30 минут</li>
+            </ul>
+        </section>
+
+        <!-- 2. Билет категориялары -->
         <section id="tickets">
             <h2>Билеттерді таңдаңыз</h2>
-            <div class="ticket-card">
-                <h3>VIP Билет</h3>
-                <p>Бағасы: 100 000 ₸</p>
-                <button class="buy-btn">Сатып алу</button>
-            </div>
-            <div class="ticket-card">
-                <h3>Стандарт Билет</h3>
-                <p>Бағасы: 50 000 ₸</p>
-                <button class="buy-btn">Сатып алу</button>
+            <ul>
+                <li>VIP Билет – 100 000 ₸ (мерчпен бірге)</li>
+                <li>Стандарт Билет – 50 000 ₸</li>
+                <li>Fan Club Билет – 150 000 ₸ (мерч + арнайы орындар)</li>
+                <li>Балаларға арналған жеңілдік билеттер – 25 000 ₸</li>
+            </ul>
+        </section>
+
+        <!-- 3. Қосымша ақпарат / қызметтер -->
+        <section id="services">
+            <h2>Қосымша ақпарат / қызметтер</h2>
+            <ul>
+                <li>Паркинг және транспорт опциялары бар</li>
+                <li>VIP пакеттерде тамақ және сусын ұсынылады</li>
+                <li>Қауіпсіздік ережелері сақталуы тиіс</li>
+            </ul>
+        </section>
+
+        <!-- 4. BTS туралы бөлім -->
+        <section id="bts-info">
+            <h2>BTS туралы</h2>
+            <ul>
+                <li>Топ мүшелері: RM, Jin, Suga, J-Hope, Jimin, V, Jungkook</li>
+                <li>Соңғы альбомдары: "BE", "Proof"</li>
+                <li>Концертте арнайы шоу мен фан-ірекеттер болады</li>
+            </ul>
+        </section>
+
+        <!-- 5. Фото/видео галерея -->
+        <section id="gallery">
+            <h2>Фото/видео галерея</h2>
+            <ul>
+                <li>BTS концерт суреттері</li>
+                <li>Музыкалық клиптер және фан-камера видеолары</li>
+            </ul>
+        </section>
+
+        <!-- 6. Пікірлер / фан хаттар -->
+        <section id="reviews">
+            <h2>Пікірлер / фан хаттар</h2>
+            <ul>
+                <li>“Концерт керемет өтті, эмоциялар шексіз!” – А. Фанат</li>
+                <li>“Билеттерді алдын ала сатып алдым, бәрі өте ыңғайлы болды” – Ж. Фанат</li>
+            </ul>
+        </section>
+
+        <!-- 7. Сатып алу процесі -->
+        <section id="purchase">
+            <h2>Сатып алу процесін жеңілдету</h2>
+            <ul>
+                <li>Онлайн төлем: Visa, MasterCard, Kaspi</li>
+                <li>QR код арқылы билет алу</li>
+                <li>Электронды немесе физикалық билет жеткізу</li>
+            </ul>
+        </section>
+
+        <!-- 8. Акциялар мен жеңілдіктер -->
+        <section id="discounts">
+            <h2>Акциялар мен жеңілдіктер</h2>
+            <ul>
+                <li>Ерте сатып алушыларға жеңілдіктер</li>
+                <li>Fan Club мүшелеріне арнайы ұсыныстар</li>
+            </ul>
+        </section>
+
+        <!-- 9. Жиі қойылатын сұрақтар -->
+        <section id="faq">
+            <h2>Жиі қойылатын сұрақтар (FAQ)</h2>
+            <ul>
+                <li>Билет қай уақытта сатылымға шығады?</li>
+                <li>Қайтару немесе айырбастау саясаты қандай?</li>
+                <li>Концертке балаларды әкелуге бола ма?</li>
+            </ul>
+        </section>
+
+        <!-- 10. Бұл сайтты жасаған адамдар -->
+        <section id="team">
+            <h2>Бұл сайтты жасаған адамдар</h2>
+            <button onclick="toggleTeam()">Көрсету / Жасыру</button>
+            <div class="team-list" id="team-list">
+                <ul>
+                    <li>Русланқызы Аружан</li>
+                    <li>Слямбек Алуа</li>
+                    <li>Хамит Айсұлу</li>
+                </ul>
             </div>
         </section>
     </main>
@@ -36,7 +136,14 @@
     <footer>
         <p>© 2025 BTS Fans. Барлық құқықтар қорғалған.</p>
     </footer>
-<link rel="stylesheet" href="style.css">
-    <script src="assets/js/main.js"></script>
+
+    <script>
+        function toggleTeam() {
+            const list = document.getElementById('team-list');
+            list.style.display = (list.style.display === 'none' || list.style.display === '') ? 'block' : 'none';
+        }
+    </script>
 </body>
+</html>
+
 </html>
