@@ -1,77 +1,168 @@
-/* ����� �������� */
+/* Жалпы стиль */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    background-color: #f5f5f5;
-    color: #333;
+  background: #f8f6ff;
+  color: #333;
+  line-height: 1.6;
 }
 
-/* Header */
+/* ---- БАС БЕТ ---- */
 header {
-    background-color: #ff4c4c;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    position: relative;
+  background: linear-gradient(90deg, #a46cf2, #e086ff);
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
 }
 
-    header .logo {
-        width: 80px;
-        height: auto;
-        position: absolute;
-        top: 10px;
-        left: 20px;
-    }
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
 
-/* ��������� */
+nav {
+  margin-top: 15px;
+}
+
 nav a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-    nav a:hover {
-        text-decoration: underline;
-    }
-
-/* Main section */
-main {
-    padding: 40px 20px;
-    text-align: center;
+nav a:hover {
+  text-decoration: underline;
 }
 
-.ticket-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    display: inline-block;
-    margin: 20px;
-    padding: 20px;
-    width: 200px;
+/* ---- БӨЛІМДЕР ---- */
+section {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-top: 40px;
 }
 
-    .ticket-card h3 {
-        margin-top: 0;
-    }
-
-.buy-btn {
-    background-color: #ff4c4c;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #6a2de8;
 }
 
-    .buy-btn:hover {
-        background-color: #e03e3e;
-    }
+ul {
+  list-style: disc;
+  margin-left: 30px;
+}
 
-/* Footer */
+/* ---- СЛАЙДЕР ---- */
+.slider {
+  position: relative;
+  max-width: 900px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.slides img {
+  width: 100%;
+  display: none;
+  border-radius: 15px;
+}
+
+.slides img.active {
+  display: block;
+  animation: fade 1s;
+}
+
+@keyframes fade {
+  from { opacity: 0.4; }
+  to { opacity: 1; }
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider-buttons button {
+  background: rgba(255,255,255,0.7);
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.slider-buttons button:hover {
+  background: rgba(255,255,255,0.9);
+}
+
+/* ---- FAQ ---- */
+.faq-item {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.faq-question {
+  background: #e9ddff;
+  padding: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px;
+  background: #fafafa;
+}
+
+/* ---- БАТЫРМАЛАР ---- */
+button {
+  background: linear-gradient(90deg, #a46cf2, #c57eff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #9155e5, #b46ef7);
+}
+
+/* ---- ТІЗІМ ---- */
+.team-list {
+  display: none;
+  margin-top: 10px;
+}
+
+/* ---- ТӨМЕНГІ БӨЛІК ---- */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+  text-align: center;
+  background: #6a2de8;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
